@@ -1,0 +1,126 @@
+--Made by Fasty
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local void = Instance.new("TextButton")
+local psychic = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+main.Position = UDim2.new(0.329304069, 0, 0.434697866, 0)
+main.Size = UDim2.new(0, 293, 0, 112)
+main.Visible = false
+main.Style = Enum.FrameStyle.RobloxRound
+main.Active = true
+main.Draggable = true
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Position = UDim2.new(0.168438271, 0, -0.0742307007, 0)
+TextLabel.Size = UDim2.new(0, 183, 0, 29)
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "Paid Gui"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 18.000
+
+void.Name = "void"
+void.Parent = main
+void.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+void.BorderColor3 = Color3.fromRGB(0, 0, 0)
+void.Position = UDim2.new(0.0229385942, 0, 0.443695337, 0)
+void.Size = UDim2.new(0, 105, 0, 24)
+void.Font = Enum.Font.GothamSemibold
+void.Text = "Spam Void"
+void.TextColor3 = Color3.fromRGB(255, 255, 255)
+void.TextSize = 14.000
+void.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/notmytypeoflamp/spam-void/main/for%20spts"))()
+end)
+
+psychic.Name = "psychic"
+psychic.Parent = main
+psychic.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+psychic.BorderColor3 = Color3.fromRGB(0, 0, 0)
+psychic.Position = UDim2.new(0.592904389, 0, 0.443695337, 0)
+psychic.Size = UDim2.new(0, 105, 0, 24)
+psychic.Font = Enum.Font.GothamSemibold
+psychic.Text = "Psychic Target"
+psychic.TextColor3 = Color3.fromRGB(255, 255, 255)
+psychic.TextSize = 14.000
+psychic.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/notmytypeoflamp/Psychic-target/main/spts"))()
+end)
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+close.Position = UDim2.new(0.333116442, 0, 0.815259099, 0)
+close.Size = UDim2.new(0, 92, 0, 24)
+close.Font = Enum.Font.GothamSemibold
+close.Text = "close gui"
+close.TextColor3 = Color3.fromRGB(255, 255, 255)
+close.TextSize = 14.000
+close.MouseButton1Down:connect(function()
+	main.Visible = false
+	openmain.Visible = true
+end)
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+openmain.BorderColor3 = Color3.fromRGB(0, 0, 0)
+openmain.Position = UDim2.new(0, 0, 0.812865496, 0)
+openmain.Size = UDim2.new(0, 69, 0, 24)
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+open.Size = UDim2.new(0, 69, 0, 24)
+open.Font = Enum.Font.ArialBold
+open.Text = "Open"
+open.TextColor3 = Color3.fromRGB(255, 255, 255)
+open.TextSize = 16.000
+open.MouseButton1Down:connect(function()
+	openmain.Visible = false
+	main.Visible = true
+end)
+-- Scripts:
+
+local function PHGQYBE_fake_script() -- void.LocalScript 
+	local script = Instance.new('LocalScript', void)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.7)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	
+		counter = counter + 0.01
+	end
+end
+coroutine.wrap(PHGQYBE_fake_script)()
+local function ZXIQ_fake_script() -- psychic.LocalScript 
+	local script = Instance.new('LocalScript', psychic)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.7)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	
+		counter = counter + 0.01
+	end
+end
+coroutine.wrap(ZXIQ_fake_script)()
