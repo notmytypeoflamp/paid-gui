@@ -1,4 +1,7 @@
---Made by Fasty
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
@@ -6,9 +9,11 @@ local TextLabel = Instance.new("TextLabel")
 local void = Instance.new("TextButton")
 local psychic = Instance.new("TextButton")
 local close = Instance.new("TextButton")
+local gui = Instance.new("TextButton")
 local openmain = Instance.new("Frame")
 local open = Instance.new("TextButton")
 
+--Properties:
 
 ScreenGui.Parent = game.CoreGui
 
@@ -17,16 +22,16 @@ main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
 main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 main.Position = UDim2.new(0.329304069, 0, 0.434697866, 0)
-main.Size = UDim2.new(0, 293, 0, 112)
-main.Visible = false
+main.Size = UDim2.new(0, 293, 0, 167)
 main.Style = Enum.FrameStyle.RobloxRound
 main.Active = true
 main.Draggable = true
+main.Visible = false
 
 TextLabel.Parent = main
 TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.Position = UDim2.new(0.168438271, 0, -0.0742307007, 0)
+TextLabel.Position = UDim2.new(0.168438271, 0, -0.0562666282, 0)
 TextLabel.Size = UDim2.new(0, 183, 0, 29)
 TextLabel.Font = Enum.Font.GothamSemibold
 TextLabel.Text = "Paid Gui"
@@ -37,7 +42,7 @@ void.Name = "void"
 void.Parent = main
 void.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 void.BorderColor3 = Color3.fromRGB(0, 0, 0)
-void.Position = UDim2.new(0.0229385942, 0, 0.443695337, 0)
+void.Position = UDim2.new(0.0161126554, 0, 0.252078563, 0)
 void.Size = UDim2.new(0, 105, 0, 24)
 void.Font = Enum.Font.GothamSemibold
 void.Text = "Spam Void"
@@ -51,7 +56,7 @@ psychic.Name = "psychic"
 psychic.Parent = main
 psychic.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 psychic.BorderColor3 = Color3.fromRGB(0, 0, 0)
-psychic.Position = UDim2.new(0.592904389, 0, 0.443695337, 0)
+psychic.Position = UDim2.new(0.606556237, 0, 0.252078593, 0)
 psychic.Size = UDim2.new(0, 105, 0, 24)
 psychic.Font = Enum.Font.GothamSemibold
 psychic.Text = "Psychic Target"
@@ -60,11 +65,12 @@ psychic.TextSize = 14.000
 psychic.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/notmytypeoflamp/Psychic-target/main/spts"))()
 end)
+
 close.Name = "close"
 close.Parent = main
 close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 close.BorderColor3 = Color3.fromRGB(0, 0, 0)
-close.Position = UDim2.new(0.333116442, 0, 0.815259099, 0)
+close.Position = UDim2.new(0.319464564, 0, 0.821247101, 0)
 close.Size = UDim2.new(0, 92, 0, 24)
 close.Font = Enum.Font.GothamSemibold
 close.Text = "close gui"
@@ -74,6 +80,22 @@ close.MouseButton1Down:connect(function()
 	main.Visible = false
 	openmain.Visible = true
 end)
+
+gui.Name = "gui"
+gui.Parent = main
+gui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+gui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+gui.Position = UDim2.new(0.232454062, 0, 0.53609997, 0)
+gui.Size = UDim2.new(0, 139, 0, 24)
+gui.Font = Enum.Font.GothamSemibold
+gui.Text = "Spts gui (no key)"
+gui.TextColor3 = Color3.fromRGB(255, 255, 255)
+gui.TextSize = 14.000
+gui.TextWrapped = true
+gui.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/notmytypeoflamp/official-spts-no-key/main/yes"))()
+end)
+
 openmain.Name = "openmain"
 openmain.Parent = ScreenGui
 openmain.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -91,12 +113,13 @@ open.Text = "Open"
 open.TextColor3 = Color3.fromRGB(255, 255, 255)
 open.TextSize = 16.000
 open.MouseButton1Down:connect(function()
-	openmain.Visible = false
 	main.Visible = true
+	openmain.Visible = false
 end)
+
 -- Scripts:
 
-local function PHGQYBE_fake_script() -- void.LocalScript 
+local function CVQR_fake_script() -- void.LocalScript 
 	local script = Instance.new('LocalScript', void)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
@@ -109,8 +132,8 @@ local function PHGQYBE_fake_script() -- void.LocalScript
 		counter = counter + 0.01
 	end
 end
-coroutine.wrap(PHGQYBE_fake_script)()
-local function ZXIQ_fake_script() -- psychic.LocalScript 
+coroutine.wrap(CVQR_fake_script)()
+local function POTIEKA_fake_script() -- psychic.LocalScript 
 	local script = Instance.new('LocalScript', psychic)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
@@ -123,4 +146,18 @@ local function ZXIQ_fake_script() -- psychic.LocalScript
 		counter = counter + 0.01
 	end
 end
-coroutine.wrap(ZXIQ_fake_script)()
+coroutine.wrap(POTIEKA_fake_script)()
+local function KMGBJIU_fake_script() -- gui.LocalScript 
+	local script = Instance.new('LocalScript', gui)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.7)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	
+		counter = counter + 0.01
+	end
+end
+coroutine.wrap(KMGBJIU_fake_script)()
